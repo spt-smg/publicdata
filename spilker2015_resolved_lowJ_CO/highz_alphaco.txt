@@ -1,0 +1,76 @@
+# source          type  srctype     alpha sigalpha    LIR         reference
+SPT0346-52	      gdr   dsfg	2.2   0.6	      3.9e13      # Spilker+15
+SPT0346-52	      mdyn  dsfg        0.9   0.5         3.9e13      # Spilker+15
+SPT0346-52        wco   dsfg        0.8   0.1         3.9e13      # Spilker+15
+SPT0538-50        gdr   dsfg        1.7   0.4         5.1e12      # Spilker+15
+SPT0538-50        mdyn  dsfg        1.4   0.8         5.1e12      # Spilker+15
+SPT0538-50        wco   dsfg        1.4   0.2         5.1e12      # Spilker+15
+GN20              mdyn  dsfg        1.1   0.6         1.9e13      # Hodge+12; LIR from Tan+14
+GN20.2a           mdyn  dsfg        1.7   0.8         7.9e12      # Hodge+13; LIR from Tan+14
+GN20.2b           mdyn  dsfg        1.1   1.0         6.9e12      # Hodge+13; LIR from Tan+14
+GN20              gdr   dsfg        0.9   0.5         1.9e13      # Magdis+11; uses gdr=75, Li&Draine01 emissivity (but beta free in fit, = 2.1)
+BzK21000          gdr   bzk         4.0   3.0         2.1e12      # Magdis+11; uses gdr=104, Li&Draine01 emissivity (but beta free in fit, = 1.4)
+PEP123712+621753  gdr   bzk         18.5  9.2         4.4e11      # Magnelli+12; uses Z-dependent gdr=78-107, Draine&Li07 dust masses (MBB from Li&Draine01 are ~3x lower!)
+PEP123709+621507  gdr   bzk         13.0  6.5         3.8e11      # "; assuming all these sources have sigalpha = 0.5*alpha, charitably
+PEP123759+621732  gdr   bzk         9.1   4.6         2.9e11      # "
+PEP123721+621346  gdr   bzk         16.0  8.0         4.5e11      # "
+PEP123615+621008  gdr   bzk         23.4  11.7        6.0e11      # "
+PEP123634+620627  gdr   bzk         4.3   2.1         8.9e11      # "
+PEP123633+621005  gdr   bzk         2.4   1.2         7.4e11      # "
+PEP123646+621141  gdr   bzk         20.4  10.2        4.1e11      # "
+PEP123650+621600  gdr   bzk         5.6   2.8         3.8e11      # "
+HDF169            gdr   bzk         1.1   0.55        4.1e12      # "
+BzK4171           gdr   bzk         2.5   1.1         9.5e11      # Magdis+12 (also in Magnelli, but exact same method w/ deeper photometry)
+BzK21000          gdr   bzk         5.7   2.0         2.1e12      # "
+BzK16000          gdr   bzk         9.7   3.1         7.4e11      # "
+BzK17999          gdr   bzk         3.9   1.2         1.1e12      # "
+BzK12591          gdr   bzk         1.53  0.76        2.7e12      # "
+HDF242            gdr   dsfg        2.65  1.32        4.5e12      # Magnelli+12
+GN20              gdr   dsfg        1.0   0.3         1.8e13      # Magdis+12
+ID8049            gdr   bzk         13.4  5.5         1.7e11      # "
+ID5819            gdr   bzk         3.7   1.3         1.8e11      # "
+ID7691            gdr   bzk         2.4   1.0         3.5e11      # "
+BzK25536          gdr   bzk         3.1   2.1         2.9e11      # "
+SMMJ2135-0102     gdr   dsfg        3.2   1.0         2.0e12      # "
+HLSW01            gdr   dsfg        1.3   0.4         1.3e13      # "
+HATLAS084933W     gdr   dsfg        1.4   0.7         3.3e13      # Ivison+13; uses Sandstrom+13 gdr=91
+HATLAS084933T     gdr   dsfg        1.1   0.6         1.4e13      # "
+HATLAS084933W     mdyn  dsfg        0.6   0.6         3.3e13      # Ivison+13; large M* uncertainty
+HATLAS084933T     mdyn  dsfg        0.3   0.3         1.4e13      # "
+HATLAS084933W     wco   dsfg        0.8   0.4         3.3e13      # Ivison+13; uses Narayanan+12 formula with Zsolar
+HATLAS084933T     wco   dsfg        0.7   0.4         1.4e13      # "; they pick 0.8 +/- 0.4 as their mean/best estimate
+HXMM01            gdr   dsfg        0.91  0.3         3.2e13      # Fu+13; uses gdr=140, kappa_125um=2.64 (cites dunne+00,james+02), gets beta~2.1
+HXMM01N           wco   dsfg        0.71  0.35        1.1e13      # Fu+13; uses N+12 with Zsolar
+HXMM01S           wco   dsfg        0.88  0.44        1.1e13      # Fu+13; "
+BzK4171           mdyn  bzk         3.9   1.2         1.0e12      # Daddi+10; LIR from q_IR
+BzK21000          mdyn  bzk         2.7   1.4         2.2e12      # "
+BzK17999          mdyn  bzk         4.0   1.3         1.5e12      # "
+SMMJ2135-0102     mdyn  dsfg        0.86  0.5         2.3e12      # Swinbank+11, calculated by me assuming 25% DM fraction as per Daddi+10
+SXDF7             ci    dsfg        1.55  0.48        2.1e12      # Alaghband-Zadeh+13; table from Bothwell
+SXDF11            ci    dsfg        2.17  0.43        1.5e12      # "
+SXDF4a            ci    dsfg        1.97  0.78        9.0e11      # "
+SXDF4b            ci    dsfg        1.35  0.42        9.0e11      # "
+SA22.96           ci    dsfg        0.48  0.47        5.0e12      # "
+J02399            ci    dsfg        1.50  0.34        7.0e12      # "
+J123549/HDF76     ci    dsfg        1.63  0.36        5.0e12      # "
+J163658           ci    dsfg        1.15  0.34        5.0e12      # "
+J14011            ci    dsfg        2.66  0.51        2.0e12      # "
+SMMJ2135-0102     ci    dsfg        3.50  0.21        2.3e12      # " 
+SMMJ16359+6612    ci    dsfg        1.34  0.26        5.0e11      # "
+MM18423+5938      ci    dsfg        1.82  0.44        2.3e12      # "
+IRASF10214        ci    qso         1.05  0.29        3.5e12      # Walter+11; table from Bothwell, LIR from Carilli&Walter review
+APM08279+5255     ci    qso         0.94  0.16        2.4e13      # "
+RXJ0911+0551      ci    qso         2.32  0.48        1.5e12      # "
+Cloverleaf        ci    qso         0.65  0.1         2.2e12      # "
+PSSJ2322+1944     ci    qso         0.84  0.17        5.1e12      # "
+J123549/HDF76     wco   dsfg        1.82  0.9         5.5e12      # Ivison+11, calc. by me using L'CO/(2pi Rhalf**2), Zsolar
+J123707N          wco   dsfg        2.55  1.3         4.1e12      # "
+J163650           wco   dsfg        1.55  0.8         7.8e12      # "
+J163658           wco   dsfg        2.19  1.1         6.4e12      # "
+HATLAS1200        wco   dsfg        1.60  0.8         1.7e13      # Fu+12, calc by me using above
+HDF850.1          wco   dsfg        0.8   0.5         8.5e12      # Walter+12, COsize from CII; calc by me using above
+IRASF10214        mdyn  qso         1.0   0.5         3.5e12      # Deane+13; tortured M* estimate
+HATLAS1429-0028   wco   dsfg        6.6   3.3         4.9e12      # Messias+14         
+HATLAS1429-0028   gdr   dsfg        2.0   1.1         4.9e12      # "; uses Scoville+14 gdr; calc. by me assumes CO21/CO10 = 0.9, mu=10
+HATLAS1429-0028   ci    dsfg        2.95  1.5         4.9e12      # "; calc by me assumes mass via CI = 2.9e10, also 21/10 and mu above
+
