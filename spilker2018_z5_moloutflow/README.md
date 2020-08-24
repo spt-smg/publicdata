@@ -15,7 +15,7 @@ Updates
 
 This paper presented the first outflow from what I've now assembled into a sample of z>4 outflows
 from the SPT survey. Data / tables / etc. for the full sample are available 
-[here](https://github.com/jspilker/data/tree/master/2020_hiz_moloutflow_sample). I strongly recommend you
+[here](https://github.com/spt-smg/publicdatadata/tree/master/spilker2020_hiz_moloutflow_sample). I strongly recommend you
 use the values there for things like outflow rates etc. because we did a much more thorough job
 in the more recent papers.
 
