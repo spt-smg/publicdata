@@ -5,6 +5,8 @@ Spilker et al. (2018), Science, 361, 1016
 
 ![z = 5.3 Molecular Outflow](Fig1_outflowdata.png)
 
+Questions can be directed to Justin: [jspilker@utexas.edu](mailto:jspilker@utexas.edu)
+
 This repository contains the data products and lens modeling results and inputs from Spilker et al. (2018).
 This folder contains everything that is also in the repository linked in the original
 journal article (I'm just reorganizing for the sake of my own sanity...).
@@ -14,8 +16,8 @@ Updates
 -------
 
 This paper presented the first outflow from what I've now assembled into a sample of z>4 outflows
-from the SPT survey. Data / tables / etc. for the full sample are available 
-[here](https://github.com/spt-smg/publicdatadata/tree/master/spilker2020_hiz_moloutflow_sample). I strongly recommend you
+from the SPT survey. Data / tables / etc. for the full sample are available in
+[Spilker et al. (2020)](https://github.com/spt-smg/publicdatadata/tree/master/spilker2020_hiz_moloutflow_sample). I strongly recommend you
 use the values there for things like outflow rates etc. because we did a much more thorough job
 in the more recent papers.
 
