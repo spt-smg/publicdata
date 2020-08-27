@@ -5,6 +5,8 @@ Spilker et al. (2015), ApJ, 811, 124
 
 ![alphaCO and Kennicutt-Schmidt](Fig67_highz_alphaCO_KS.png)
 
+Questions can be directed to Justin: [jspilker@utexas.edu](mailto:jspilker@utexas.edu)
+
 In this paper we presented spatially-resolved imaging of low-J CO lines in two
 lensed dusty star-forming galaxies. We constrained the infamous CO-H2 conversion 
 factor in multiple independent ways and found good agreement between the methods. 
