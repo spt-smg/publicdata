@@ -5,6 +5,8 @@ Spilker et al. (2016), ApJ, 826, 112
 
 ![Magnifications and CII deficit](Fig37_mudist_ciifir.png)
 
+Questions can be directed to Justin: [jspilker@utexas.edu](mailto:jspilker@utexas.edu)
+
 This paper was a big chunk of my PhD thesis. I spent a too-large chunk of my 
 life making gravitational lens models for about 50 SPT-selected dusty star-forming
 galaxies. We've since used the magnifications and intrinsic sizes for a lot of
@@ -13,15 +15,6 @@ different projects.
 You can access all the results of the lens models in [this folder](lensmodel_results);
 this basically consolidates Tables 3 and 4 from the paper. There are a few wonky things
 to keep in mind, so be sure to check out the readme in that folder as well. 
-
-The points used to create Figure 7, exploring the "[CII deficit]" in terms of the far-IR
-surface density at low- and high-redshift, are [here](lcii_lfir.txt). Note, however, that
-this sample is now several years out of date, and there has been a lot of new resolved-CII
-data coming out of ALMA. Also, the GOALS collaboration has released improved measurements
-of the FIR surface density for their nearby ULIRGs as part of 
-[Diaz-Santos et al. 2017](https://ui.adsabs.harvard.edu/abs/2017ApJ...846...32D/abstract).
-Those values (as of late 2020) were available on the 
-[GOALS website](http://goals.ipac.caltech.edu/highlights/highlights.html).
 
 The lens modeling code I developed as part of this paper, `visilens`, is publicly available as well.
 It is designed to quickly model observations from interferometers like ALMA or the VLA.
@@ -38,6 +31,15 @@ units (e.g. arcsec) which don't rely on redshift, but now you can convert them t
 effective sizes in physical units, or get the lens masses from the Einstein radii. Please 
 cite [Reuter et al. 2020](https://ui.adsabs.harvard.edu/abs/2020arXiv200614060R/abstract)
 alongside this paper if you use the lens model results.
+
+The points used to create Figure 7, exploring the "[CII deficit]" in terms of the far-IR
+surface density at low- and high-redshift, are [here](lcii_lfir.txt). Note, however, that
+this sample is now several years out of date, and there has been a lot of new resolved-CII
+data coming out of ALMA. Also, the GOALS collaboration has released improved measurements
+of the FIR surface density for their nearby ULIRGs as part of 
+[Diaz-Santos et al. 2017](https://ui.adsabs.harvard.edu/abs/2017ApJ...846...32D/abstract).
+Those values (as of late 2020) were available on the 
+[GOALS website](http://goals.ipac.caltech.edu/highlights/highlights.html).
 
 
 Citation
