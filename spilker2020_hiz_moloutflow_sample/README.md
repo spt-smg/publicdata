@@ -6,7 +6,8 @@ Spilker et al. (2020), submitted
 <!-- ![Inside-out quenching](Fig5_radprofs.png) -->
 
 This repository will host the information from all the tables in Spilker et al. (2020a, 2020b),
-a pair of papers about high-redshift molecular outflows.
+a pair of papers about high-redshift molecular outflows. The data tables will be posted here
+once the papers are posted to the arxiv; for early requests please contact Justin.
 
 
 
