@@ -1,12 +1,16 @@
 Spilker et al. (2020 a & b), ApJ accepted
 =======================================
 
+![Outflows highlights](outflows_splash.png)
+
 Questions can be directed to Justin: [jspilker@utexas.edu](mailto:jspilker@utexas.edu)
 
 I'm very pleased to present the results from a lot of effort to build the first sample of
-z > 4 molecular outflows, which we present in a pair of papers. The first paper focuses
-mainly on the overall sample properties and the resolved structure of the outflows, while
-the second paper focues on the outflow rates and energetics and so on.
+z > 4 molecular outflows, which we present in a pair of papers. Not only is this the first
+statistical sample of outflows in the early universe, but we can spatially resolve the
+outflows on ~few hundred parsec scales due to gravitational lensing at the same time.
+The first paper focuses mainly on the overall sample properties and the resolved structure 
+of the outflows, while the second paper focues on the outflow rates and energetics and so on.
 
 The files here combine all the tables from both papers in a way that I hope is useful for
 folks who want to use this sample. We're in the regime where we have measured many different 
