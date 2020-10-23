@@ -11,21 +11,22 @@ the second paper focues on the outflow rates and energetics and so on.
 The files here combine all the tables from both papers in a way that I hope is useful for
 folks who want to use this sample. We're in the regime where we have measured many different 
 quantities for a small number of objects, so the files have lots of columns but few rows. If 
-there is anything else from this sample that you want or need, just ask!
+there is anything else from this sample that you want or need, just ask! I will happily 
+provide spectra/images/maps/etc if you need them for something.
 
 I've tried to divide things up in a sensible way that hopefully isn't too much of a headache 
 for most people. There is some overlap between these files.
 
-- ``Spilker2020_column_description.txt``:
+- ``spilker2020_column_description.txt``:
     Gives a longer description of what all the columns in all files are.
     
-- ``Spilker2020_outflows_mostuseful.txt``:
+- ``spilker2020_outflows_mostuseful.txt``:
     Contains what I'm guessing will be the most useful for the most people, sample observed properties and outflow derived properties. If you just want to add these objects to a SFR vs Mdotout plot or something, this file is for you.
 
-- ``Spilker2020_outflows_OH_observables.txt``:
+- ``spilker2020_outflows_OH_observables.txt``:
     Contains various observable properties of the OH spectra - velocity metrics (e.g. v_50, v_max), equivalent widths, and all the Gaussian fit parameters from Paper I
 
-- ``Spilker2020_outflows_alloutflowrates.txt``:
+- ``spilker2020_outflows_alloutflowrates.txt``:
     Basically a reproduction of Table 1 in Paper II, contains all outflow rates from all methods as well as the final 'best' outflow rates/masses/energetics
 
 
@@ -36,19 +37,26 @@ For python users, I've found the easiest way to play around with these is using 
 
     import pandas as pd
     S20 = pd.read_csv('Spilker2020_outflows_mostuseful.txt',delim_whitespace=True,index_col=0,comment='#')
+    
     # Get one column from the full dataframe:
     print(S20['LIR'])
+    
     # Get multiple columns:
     print(S20[['LIR','Mdotout']])
+    
     # Get one row from the full dataframe:
     print(S20.loc['SPT2319-55'])
+    
     # Get multiple rows from the full dataframe:
     print(S20.loc[['SPT0418-47','SPT2319-55']])
+    
     # Get multiple columns where a certain condition has been met:
     print(S20.loc[S20['outflow']==True, ['LIR','Mdotout']])
     print(S20.loc[S20['LIR'] < 1e13, ['LIR','Mdotout']])
+    
     # Print all row names (the dataframe "index")
     print(S20.index)
+    
     # Print all column names
     print(S20.columns)
     
@@ -68,7 +76,7 @@ For python users, I've found the easiest way to play around with these is using 
 General notes and formatting
 ----------------------------
 
-1. THERE ARE OUTFLOW PROPERTIES LISTED EVEN FOR SOURCES THAT DON'T (UNAMBIGUOUSLY) SHOW AN OUTFLOW. 
+1. *There are outflow properties listed even for sources that don't (unambiguously) show an outflow.* 
     All of the methods in Paper II can/do/will spit out an outflow rate based on the observables, even 
     if a particular source doesn't have an outflow (see long discussion in Paper I). Instead you should 
     use the `outflow` True/False column to remove the sources that don't show an outflow. Why did I do 
