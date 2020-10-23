@@ -76,7 +76,7 @@ For python users, I've found the easiest way to play around with these is using 
 General notes and formatting
 ----------------------------
 
-1. *There are outflow properties listed even for sources that don't (unambiguously) show an outflow.* 
+1. **There are outflow properties listed even for sources that don't (unambiguously) show an outflow.** 
     All of the methods in Paper II can/do/will spit out an outflow rate based on the observables, even 
     if a particular source doesn't have an outflow (see long discussion in Paper I). Instead you should 
     use the `outflow` True/False column to remove the sources that don't show an outflow. Why did I do 
