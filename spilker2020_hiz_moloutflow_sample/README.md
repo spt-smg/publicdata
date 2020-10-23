@@ -40,7 +40,7 @@ How to use these files
 For python users, I've found the easiest way to play around with these is using the pandas package:
 
     import pandas as pd
-    S20 = pd.read_csv('Spilker2020_outflows_mostuseful.txt',delim_whitespace=True,index_col=0,comment='#')
+    S20 = pd.read_csv('spilker2020_outflows_mostuseful.txt',delim_whitespace=True,index_col=0,comment='#')
     
     # Get one column from the full dataframe:
     print(S20['LIR'])
@@ -67,9 +67,9 @@ For python users, I've found the easiest way to play around with these is using 
     # Combine all three tables into one giant dataframe
     # Note you can select a subset of the columns by adding 
     # usecols=['list','of','colnames'] to the read_csv calls below
-    S20 = S20.merge(pd.read_csv('Spilker2020_outflows_OH_observables.txt',delim_whitespace=True,index_col=0,comment='#'),
+    S20 = S20.merge(pd.read_csv('spilker2020_outflows_OH_observables.txt',delim_whitespace=True,index_col=0,comment='#'),
           left_index=True,right_index=True,how='outer',suffixes=('','_dup'))
-    S20 = S20.merge(pd.read_csv('Spilker2020_outflows_alloutflowrates.txt',delim_whitespace=True,index_col=0,comment='#'),
+    S20 = S20.merge(pd.read_csv('spilker2020_outflows_alloutflowrates.txt',delim_whitespace=True,index_col=0,comment='#'),
           left_index=True,right_index=True,how='outer',suffixes=('','_dup'))
     # Remove duplicate columns that we appended _dup to
     S20.drop(list(S20.filter(regex='_dup$')),axis=1,inplace=True)
