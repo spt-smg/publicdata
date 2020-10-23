@@ -1,0 +1,138 @@
+This file gives more details about all the quantities given in the other three files.
+
+Spilker2020_ouflows_mostuseful.txt
+My guess for what people will find are the most useful values from all tables in both papers.
+- Source        string          unitless
+  SPT source name
+- outflow       boolean         unitless
+  True if source has an unambiguous molecular outflow, see Paper I S3.2.
+- zlens         float           unitless
+  Foreground lens redshift, if known.
+- zsrc          float           unitless
+  Background source redshift, from CO/CII/OH/other ALMA spectra.
+- mu            float           unitless
+  Gravitational lensing magnification in the 119um continuum. Uncertainty ~15%.
+- LIR, dLIR     float           Lsun
+  IR luminosity, lensing-corrected, integrated over rest-frame 8-1000um.
+- LFIR, dLFIR   flaot           Lsun
+  Far-IR luminosity, lensing-corrected, integrated over rest-frame 40-120um.
+- fAGN          float           unitless
+  Estimated AGN contribution to the total luminosity L_bol. These are *all* 1sigma upper limits,
+  we have no evidence for AGN in any source. Following the low-z literature, we take L_bol = 1.15*L_IR,
+  with L_AGN = fAGN * L_bol and L_SF = (1 - fAGN) * L_bol
+- MH2, dMH2     float           Msun
+  Molecular gas mass, lensing-corrected, from CO(2-1) spectra using r_21 = 0.9 and alpha_CO = 0.8.
+- rdust         float           kpc
+  Circularized radius of the 119um dust continuum emission, defined as the region where continuum
+  is detected at S/N > 5. Uncertainty ~15%.
+- v50, dv50     float           km/s
+  Median absorption velocity of the OH spectra, i.e. if you take just one OH doublet component, 50%
+  of the absorption takes place at velocities more negative than this.
+- v84, dv84     float           km/s
+  Same as v50, but for the 84th percentile absorption velocity, i.e. 16% of the absorption is at 
+  more negative velocities than this.
+- vmax, dvmax   float           km/s
+  Same as v84, but for the 'maximum' absorption velocity that we take to be the 98th percentile.
+- Mdotout etc.  float           Msun/yr
+  Joint 'best' molecular outflow rates from combining all methods. dMdotout_m and _p are the minus/plus 
+  uncertainties, i.e. they give the 16/84th percentile confidence intervals.
+- Mout etc.     float           Msun
+  Total molecular outflow masses, uncertainties as for Mdotout.
+- pout          float           g*cm/s
+  Outflow momentum (= Mout * vout), can't believe I'm using cgs units. Uncertainty ~0.4dex.
+- pdotout       float           g*cm/s^2
+  Outflow momentum rate (= Mdotout * vout). Uncertainty ~0.4dex.
+- Eout          float           erg
+  Outflow kinetic energy (= 1/2 Mout vout^2). Uncertainty ~0.4dex.
+- Edotout       float           Lsun
+  Outflow kinetic power (= 1/2 Mdotout vout^2), finally back to useful units. Uncertainty ~0.4dex.
+
+
+
+Spilker2020_ouflows_OH_observables.txt
+Derived and fit parameters from the OH spectra. The last ~18 columns contain
+the actual Gaussian fit parameters to the spectra in case you want to recreate
+any other derived property.
+- Source        string          unitless
+  SPT source name
+- outflow       boolean         unitless
+  True if source has an unambiguous molecular outflow, see Paper I S3.2.
+- zsrc          float           unitless
+  Background source redshift, from CO/CII/OH/other ALMA spectra.
+- v50, dv50     float           km/s
+  Median absorption velocity of the OH spectra, i.e. if you take just one OH doublet component, 50%
+  of the absorption takes place at velocities more negative than this.
+- v84, dv84     float           km/s
+  Same as v50, but for the 84th percentile absorption velocity, i.e. 16% of the absorption is at 
+  more negative velocities than this.
+- vmax, dvmax   float           km/s
+  Same as v84, but for the 'maximum' absorption velocity that we take to be the 98th percentile.
+- EQW_v100 etc  float           km/s
+  Equivalent width integrated from -infinity to -100km/s based on the Gaussian fits.
+- EQW_v200 etc  float           km/s
+  Equivalent width integrated from -infinity to -200km/s based on the Gaussian fits.
+- EQW_totabs    float           km/s
+  Total absorption equivalent width from the fits, *for one single OH doublet transition*,
+  i.e. if you want the real total equivalent width, multiply by 2.
+The remaining columns give all the fitted parameters from the Gaussian fitting, see Paper I S3.1.
+Basically all the spectra are fit with 1 or 2 sets of two equal-amplitude Gaussians with a separation
+fixed to the separation of the two OH doublet components (~520km/s) plus a constant continuum. These
+are *not* corrected for the lensing magnification, they are purely the observed quantities.
+- Scont119      float           mJy
+  Continuum flux density at rest-frame 119um
+- Comp?vcen     float           km/s
+  Center velocities (relative to the higher-frequency OH doublet component) of the sets of
+  Gaussians. For some sources one component was fixed to systemic velocity (0 km/s), and others
+  don't need a second component (have all nan's for the Comp2 parameters).
+- Comp?Sabs     float           mJy
+  Amplitude of the Gaussian absorption profiles.
+- Comp?FWHM     float           km/s
+  FWHM of the Gaussian absorption profiles.
+- Comp?EQW      float           km/s
+  Equivalent width of one of the two doublet lines (i.e. for the total EQW must multiply by 2).
+
+
+
+Spilker2020_outflows_alloutflowrates.txt
+Basically just Table 1 from Paper II almost verbatim. Note that I give outflow rates even for
+sources that do not have unambiguous outflows. All of the methods in Paper II can/do/will spit 
+out an outflow rate based on the observables, even if a particular source doesn't have an 
+outflow (see long discussion in Paper I for what constitutes an outflow). Instead you should use 
+the 'outflow' True/False column to remove the sources that don't show an outflow. Why did I do 
+this? (a) it makes the table much simpler, (b) we did detect OH in all sources and at some level 
+which ones have an outflow or not is well, just, like, my opinion, man, and maybe you have a 
+different opinion or you're from the future and know that some source I thought was ambiguous 
+really does have a true outflow.
+- Source        string          unitless
+  SPT source name
+- outflow       boolean         unitless
+  True if source has an unambiguous molecular outflow, see Paper I S3.2.
+- zsrc          float           unitless
+  Background source redshift, from CO/CII/OH/other ALMA spectra.
+- Mdot_thin     float           Msun/yr
+  Outflow rates assuming optically-thin absorption. These are bare-minimum lower limits. See S3.1.
+- Mdot_thincorr float           Msun/yr
+  Outflow rates trying to 'correct' the optically-thin rates using the outflow velocities. See S3.1.
+- Mdot_S18      float           Msun/yr
+  Outflow rates a la Spilker+2018, which assumes Mdot \propto EQW_v100 alone. See S3.2.
+- Mdot_HC20     float           Msun/yr
+  Outflow rates a la Herrera-Camus+2020, which assumes Mdot \propto EQW_v200 * sqrt(L_IR). See S3.2.
+- Mdot_PLS      float           Msun/yr
+  Outflow rates using the more complicated PLS technique. See S3.3.
+- Mdot_joint    float           Msun/yr
+  The joint / 'best' outflow rates from combining all methods. These are the same as the columns
+  labeled 'Mdotout' in the _mostuseful.txt file. See S3.4.
+- Mout etc.     float           Msun
+  Total molecular outflow masses assuming the best/joint Mdot's.
+- pout          float           g*cm/s
+  Outflow momentum (= Mout * vout), can't believe I'm using cgs units. Uncertainty ~0.4dex.
+- pdotout       float           g*cm/s^2
+  Outflow momentum rate (= Mdotout * vout). Uncertainty ~0.4dex.
+- Eout          float           erg
+  Outflow kinetic energy (= 1/2 Mout vout^2). Uncertainty ~0.4dex.
+- Edotout       float           Lsun
+  Outflow kinetic power (= 1/2 Mdotout vout^2), finally back to useful units. Uncertainty ~0.4dex.
+
+
+
+

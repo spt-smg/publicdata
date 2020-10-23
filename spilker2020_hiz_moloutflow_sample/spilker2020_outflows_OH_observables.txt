@@ -1,0 +1,15 @@
+# Summary table of SPT z>4 OH observable properties - velocity metrics, equivalent widths, and gaussian fit parameters.
+# See the Spilker2020_column_description.txt file for more detailed description of what all of these numbers are.
+Source	outflow	zsrc            v50	dv50	v84	dv84	vmax	dvmax           EQW_v100	dEQW_v100	EQW_v200	dEQW_v200	EQW_totabs	dEQW_totabs	Scont119	dScont119	Comp1vcen	dComp1vcen	Comp1Sabs	dComp1Sabs	Comp1FWHM	dComp1FWHM	Comp1EQW	dComp1EQW	Comp2vcen	dComp2vcen	Comp2Sabs	dComp2Sabs	Comp2FWHM	dComp2FWHM	Comp2EQW	dComp2EQW
+# ---	---	---             km/s	km/s	km/s	km/s	km/s	km/s            km/s            km/s            km/s            km/s            km/s            km/s            mJy	mJy	km/s	km/s	mJy	mJy	km/s	km/	km/s	km/s	km/s	km/s	mJy	mJy	km/s	km/s	km/s	km/s     
+SPT0202-61	False	5.0180          +135	10	-115	25	-370	55              26.0	2.4	13.8	2.2	153.2	3.3	124.4	0.6	204.9	28.7	-32.4	1.9	406.9	49.5	119.6	9.0	-127.7	38.0	-10.9	2.8	390.6	120.3	33.6	8.8      
+SPT0418-47	True	4.2248          -35	10	-230	50	-430	80              31.4	3.9	18.0	3.3	100.9	3.7	184.4	1.2	0.	0.	-58.8	2.7	224.8	19.3	82.8	3.7	-298.9	30.5	-14.8	2.9	263.4	90.8	18.1	4.6      
+SPT0441-46	True	4.4770          +100	10	-120	45	-440	75              41.3	5.1	26.5	4.7	234.5	6.4	123.0	1.5	133.3	5.7	-68.0	2.8	333.9	27.8	196.5	10.9	-278.7	79.8	-11.7	2.6	346.6	87.9	38.0	10.1     
+SPT0459-58	True	4.8560          -260	20	-560	60	-890	100             138.2	11.8	108.5	11.0	175.7	12.4	69.6	1.1	-258.7	17.8	-15.4	1.3	730.5	121.2	175.7	22.4	nan	nan	nan	nan	nan	nan	nan	nan      
+SPT0459-59	False	4.7993          -110	20	-280	25	-460	40              55.4	4.6	31.3	4.1	106.6	5.4	63.0	0.6	-110.6	18.6	-15.8	1.3	399.0	26.5	106.6	5.4	nan	nan	nan	nan	nan	nan	nan	nan      
+SPT0544-40	True	4.2692          -360	20	-590	90	-830	170             147.9	26.2	120.1	24.1	165.3	27.1	116.9	3.1	-356.4	22.4	-29.4	2.5	562.2	61.7	165.3	27.1	nan	nan	nan	nan	nan	nan	nan	nan      
+SPT2048-55	True	4.0923          -25	10	-210	30	-480	85              68.6	4.0	34.9	3.3	225.5	17.4	94.0	1.3	0.	0.	-48.3	2.2	337.1	15.3	213.3	7.4	-321.7	50.3	-6.1	1.9	384.4	160.1	26.2	5.3      
+SPT2103-60	False	4.4357          -240	20	-400	20	-570	30              78.1	4.9	57.1	4.2	96.9	6.6	96.2	1.2	-240.1	14.8	-23.7	1.5	371.5	30.3	96.9	6.6	nan	nan	nan	nan	nan	nan	nan	nan      
+SPT2132-58	True	4.7677          -360	60	-750	120	-1110	220             104.8	34.9	87.6	32.2	117.8	21.3	73.1	1.9	0.	0.	-10.0	1.7	131.8	47.1	18.8	7.2	-442.3	52.8	-8.7	1.2	827.9	225.3	99.0	22.9     
+SPT2311-54	True	4.2795          -620	35	-900	65	-1200	105             166.5	16.0	146.6	15.3	117.9	11.5	71.7	1.2	-622.3	26.6	-11.8	1.0	685.2	101.2	117.9	11.5	nan	nan	nan	nan	nan	nan	nan	nan      
+SPT2319-55	True	5.2943          -215	40	-525	40	-760	60              82.2	7.6	63.3	6.2	112.4	6.8	52.1	0.5	0.	0.	-7.3	0.9	350.3	43.5	51.7	14.5	-397.9	31.4	-7.6	0.9	397.3	59.6	63.7	14.3     
