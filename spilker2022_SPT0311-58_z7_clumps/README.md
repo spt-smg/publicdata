@@ -21,3 +21,10 @@ Do yourself a favor and play around with an interactive 3D rendering of the CII 
   
   
 ![Nifty cube rotation](cube_rotate.gif)
+
+
+
+Data Products
+-------------
+
+Source-plane reconstructions of the continuum and CII emission, as well as a table of derived clump properties, will be provided on paper acceptance.
