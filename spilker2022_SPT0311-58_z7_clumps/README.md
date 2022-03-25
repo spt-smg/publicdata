@@ -27,4 +27,4 @@ Do yourself a favor and play around with an interactive 3D rendering of the CII 
 Data Products
 -------------
 
-Source-plane reconstructions of the continuum and CII emission, as well as a table of derived clump properties, will be provided on paper acceptance.
+The source-plane reconstructions of the continuum and CII data are provided above as FITS files. A table with the most important clump properties ``spilker22_spt0311-58_clumpproperties.txt`` is also given. I (Justin) have calculated many other miscellaneous clump properties that weren't used in the paper (e.g. dust mass, surface densities, gas masses under alternative assumptions, ...); if you would like them for any reason please [email me](mailto:jspilker@tamu.edu).
