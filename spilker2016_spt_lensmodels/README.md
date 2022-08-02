@@ -5,7 +5,7 @@ Spilker et al. (2016), ApJ, 826, 112
 
 ![Magnifications and CII deficit](Fig37_mudist_ciifir.png)
 
-Questions can be directed to Justin: [jspilker@utexas.edu](mailto:jspilker@utexas.edu)
+Questions can be directed to Justin: [jspilker@tamu.edu](mailto:jspilker@tamu.edu)
 
 This paper was a big chunk of my PhD thesis. I spent a too-large chunk of my 
 life making gravitational lens models for about 50 SPT-selected dusty star-forming
