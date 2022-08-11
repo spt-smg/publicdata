@@ -1,4 +1,4 @@
-Spilker et al. (2022), submitted
+Spilker et al. (2022), ApJL, 929, 3
 =======================================
 
 In this paper we show off the structure of the z = 7 system SPT0311-58, currently the most massive system known in the reionization era. Using 0.07" imaging of the dust and CII emission from ALMA, we found that the system breaks up into at least a dozen kiloparsec-scale clumps.
