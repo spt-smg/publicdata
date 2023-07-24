@@ -14,25 +14,23 @@ Citation
 --------
 
 ```
-  @ARTICLE{2020arXiv200614060R,
-       author = {{Reuter}, C. and {Vieira}, J.~D. and {Spilker}, J.~S. and {Weiss}, A. and
-         {Aravena}, M. and {Archipley}, M. and {Bethermin}, M. and
-         {Chapman}, S.~C. and {De Breuck}, C. and {Dong}, C. and
-         {Everett}, W.~B. and {Fu}, J. and {Greve}, T.~R. and {Hayward}, C.~C. and
-         {Hill}, R. and {Hezaveh}, Y. and {Jarugula}, S. and {Litke}, K. and
-         {Malkan}, M. and {Marrone}, D.~P. and {Narayanan}, D. and
-         {Phadke}, K.~A. and {Stark}, A.~A. and {Strandet}, M.~L.},
+@ARTICLE{2020ApJ...902...78R,
+       author = {{Reuter}, C. and {Vieira}, J.~D. and {Spilker}, J.~S. and {Weiss}, A. and {Aravena}, M. and {Archipley}, M. and {B{\'e}thermin}, M. and {Chapman}, S.~C. and {De Breuck}, C. and {Dong}, C. and {Everett}, W.~B. and {Fu}, J. and {Greve}, T.~R. and {Hayward}, C.~C. and {Hill}, R. and {Hezaveh}, Y. and {Jarugula}, S. and {Litke}, K. and {Malkan}, M. and {Marrone}, D.~P. and {Narayanan}, D. and {Phadke}, K.~A. and {Stark}, A.~A. and {Strandet}, M.~L.},
         title = "{The Complete Redshift Distribution of Dusty Star-forming Galaxies from the SPT-SZ Survey}",
-      journal = {arXiv e-prints},
-     keywords = {Astrophysics - Astrophysics of Galaxies},
+      journal = {\apj},
+     keywords = {Observational cosmology, Early universe, High-redshift galaxies, Galaxy evolution, Interstellar molecules, 1146, 435, 734, 594, 849, Astrophysics - Astrophysics of Galaxies},
          year = 2020,
-        month = jun,
-          eid = {arXiv:2006.14060},
-        pages = {arXiv:2006.14060},
+        month = oct,
+       volume = {902},
+       number = {1},
+          eid = {78},
+        pages = {78},
+          doi = {10.3847/1538-4357/abb599},
 archivePrefix = {arXiv},
        eprint = {2006.14060},
  primaryClass = {astro-ph.GA},
-       adsurl = {https://ui.adsabs.harvard.edu/abs/2020arXiv200614060R},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2020ApJ...902...78R},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
+
 ```
