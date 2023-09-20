@@ -7,8 +7,6 @@ In this paper we present resolved metallicity maps for two lensed dust-obscured 
 
 Questions about this paper can be directed to Jack: [jbirkin@tamu.edu](mailto:jbirkin@tamu.edu)
 
-![1-D spectra](spectra.pdf)
-
 Citation
 --------
 
