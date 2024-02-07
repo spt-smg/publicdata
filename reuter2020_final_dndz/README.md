@@ -5,11 +5,16 @@ Reuter et al. (2020)
 
 This repo contains the positions, photometry, SED fits, derived intrinsic properties and other useful information about the complete DSFG sample.  These data were originally presented in the appendices of Reuter *et al.* 2020, and are available here in machine-readable format (either as `.txt` and `.fits`).  
 
-This work has been submitted for publication in ApJ.  
+This work has was published in ApJ, and can be referenced using the citation below.  
 
 Questions about this data can be directed to Cassie: [creuter@illinois.edu](mailto:creuter@illinois.edu)
 
 
+Updates
+--------
+
+The redshift for SPT0452-50, which was originally reported in [Weiss+13](https://ui.adsabs.harvard.edu/abs/2013ApJ...767...88W/abstract) to be z=2.0105 was updated in [Riechers+24](https://ui.adsabs.harvard.edu/abs/2024arXiv240105487R/abstract) to z=5.016.  We have updated the redshift in all tables in this repo, along with the corresponding values for dust temperature, dust mass, IR luminosity and star formation rate.  We have also added another version of Table F1, which uses a value for $\kappa_{870 um}\;\mathrm{m^2\; kg^{-1}} = 0.038$ from [Draine+03](https://ui.adsabs.harvard.edu/abs/2003ApJ...598.1026D/abstract).  In the same file, we also updated the photometric redshifts in light of the change in dust temperature distribution, though the values largely agree with published values within the stated error bars.
+  
 Citation
 --------
 
